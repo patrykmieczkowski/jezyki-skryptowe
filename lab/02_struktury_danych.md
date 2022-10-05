@@ -6,6 +6,8 @@ lista mutowalna, typ *list*
 lista = [1, 2, 3, 4, 5, 1, 1]
 print(lista)
 print(lista[1])
+print(lista[2:4])
+print(lista[5:])
 lista[5] = 77
 del lista[6]
 lista.append("string")
@@ -42,7 +44,7 @@ print(f"w moim secie są {wartosci}")
 ```
 
 ## Definicje 📝
-| lists               | tuples              | sets          | dictionaries      |
+| list                | tuple               | set           | dictionary        |
 |---------------------|---------------------|---------------|-------------------|
 | ordered             | ordered             | unordered     | unordered         |
 | mutable             | immutable           | mutable       | mutable           |
