@@ -37,8 +37,15 @@ os.path.isfile(path)
 os.path.isdir(path)
 ```
 
-## Odczyt z pliku
-with open automatycznie zamknie plik po zakończonych operacjach, domyślny mode to 'r' - read
+## Operacje na plikach
+po otwarciu poprzez *open()* nalezy pamiętać o wywołaniu *close()* na końcu
+```python
+f = open("file.txt", "a")
+f.write("Nowy tekst dodany do pliku!")
+f.close()
+```
+
+*with open()* automatycznie zamknie plik po zakończonych operacjach
 ```python
 try:
     with open('plik.txt') as file:
@@ -52,6 +59,13 @@ text = "Witaj pliku"
 with open('plik.txt','w') as file:
     file.write(text)
 ```
+
+| mode | opis działania                                                      |
+|------|---------------------------------------------------------------------|
+| 'r'  | domyślny mode, otwiera plik do odczytu                              |
+| 'w'  | otwiera plik do zapisu i nadpisuje dane                             |
+| 'x'  | tworzy plik                                                         |
+| 'a'  | otwiera plik do dopisywania danych nie usuwając istniejących        |
 
 ## Usuwanie pliku
 ```python
@@ -67,6 +81,9 @@ except PermissionError:
 else:
     print(f"Pomyslnie usunieto {path}")
 ```
+
+## Definicje
+* https://www.programiz.com/python-programming/methods/built-in/open
 
 ## Zadania
 1. Utwórz plik integer_dataset.txt, który będzie zawierał 30 losowych liczb z przedziału (0; 200) oddzielonych spacjami, a następnie:
