@@ -44,6 +44,24 @@ def multiply(number1, number2):
 x = multiply(5,8)
 ```
 
+scope lokalny i globalny
+```python
+x = 1 # global scope
+
+def moja_funkcja():
+    y = 2 # local scope
+    print(f"x = {x}, y = {y}")
+
+print(f"x = {x}, nie ma dostępu do zmiennej y spoza funkcji")
+
+def funkcja_z_globalna_zmienna():
+    global z
+    z = 3
+
+funkcja_z_globalna_zmienna()
+print(f"mam dostęp do globalnej zmiennej z = {z}")
+```
+
 istniejące funkcje zwracające losowe wartości
 ```python
 import random

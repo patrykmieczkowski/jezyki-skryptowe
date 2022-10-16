@@ -49,10 +49,14 @@ f.close()
 ```python
 try:
     with open('plik.txt') as file:
-        print(file.read())
+        dane = file.read()
+        print(f"plik zawiera: {dane}")
 except FileNotFoundError:
     print("Nie znaleziono pliku")
 ```
+*file.read()* - zwraca cały tekst  
+*file.read(10)* - zwraca określoną liczbę znaków  
+*file.readline()* - zwraca jedną linie, kolejne wywołania zwracają kolejne
 
 ```python
 text = "Witaj pliku"
@@ -60,12 +64,12 @@ with open('plik.txt','w') as file:
     file.write(text)
 ```
 
-| mode | opis działania                                                      |
-|------|---------------------------------------------------------------------|
-| 'r'  | domyślny mode, otwiera plik do odczytu                              |
-| 'w'  | otwiera plik do zapisu i nadpisuje dane                             |
-| 'x'  | tworzy plik                                                         |
-| 'a'  | otwiera plik do dopisywania danych nie usuwając istniejących        |
+| mode | opis działania |
+|-|-|
+| 'r' | domyślny mode, otwiera plik do odczytu |
+| 'w' | otwiera plik do zapisu i nadpisuje dane |
+| 'x' | tworzy plik |
+| 'a' | otwiera plik do dopisywania danych nie usuwając istniejących |
 
 ## Usuwanie pliku
 ```python
