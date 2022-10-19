@@ -56,9 +56,17 @@ while True:
     print(f"input {x}")
 ```
 
+| operator | odpowiednik w Pythonie |
+|-|-|
+| && | and |
+| \|\| | or |
+| ! | not |
+
 ## Definicje 📝
 * z jednym argumentem funkcja *range()* generuje listę liczb całkowitych od zera do wartości argumentu (bez niej samej), z dwoma argumentami pierwszy uznawany jest za dolną granicę, z trzema trzeci argument jest krokiem
 
 ## Zadania ✏️
-1. Za pomocą pętli z każdą iteracją odcinaj pierwszy znak słowa "nabuchodonozor" aż wypisany zostanie pusty string
-2. Wypisz za pomocą pętli wszystkie liczby do 1000 podzielne przez 5
+1. Napisz program stwierdzający czy liczba podana przez użytkownika jest parzysta czy nieparzysta
+2. Za pomocą pętli z każdą iteracją odcinaj pierwszy znak słowa "nabuchodonozor" aż wypisany zostanie pusty string
+3. Wypisz za pomocą pętli wszystkie liczby do 1000 podzielne przez 5. Przekształć program tak aby górną granicę oraz dzielnik podawał użytkownik.
+4. Sprawdź za pomocą pętli *for* i instrukcji *if* czy wszystkie elementy **lista1 = [1, 2, 3]** znajdują się w **lista2 = [1, 4, 2, 5, 3, 6]**
