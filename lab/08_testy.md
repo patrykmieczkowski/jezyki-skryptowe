@@ -87,7 +87,7 @@ def test_eval(test_input, expected):
 ## Zadania
 1. Przygotuj testy funkcji sprawdzającej czy osoba o przekazanym wieku jest pełnoletnia dla wieku 4, 18, 24, 38  
 ```def is_adult(age)```
-2. Przygotuj testy funkcji zwracającej pole koła dla trzech różnych wartości, dodatkowo rozważ warunek w którym promień zostanie podany jako typ różny od *int* lub *double*  
+2. Przygotuj testy funkcji zwracającej pole koła dla trzech różnych wartości, dodatkowo rozważ warunek w którym promień zostanie podany jako typ różny od *int* lub *float*  
 ```def calculate_circle_area(r)```
-3. Przygotuj test sprawdzający działanie funkcji ```.sort()``` wywołanej na liście zawierającej listę miast, adresów mailowych, numerów telefonów oraz wartości logicznych. Do przekazywania różnych danych wykorzystaj konstrukcję ```parametrize```
+3. Przygotuj test sprawdzający działanie funkcji sortującej (własnej implementacji) wywołanej na liście zawierającej listę miast, adresów mailowych, numerów telefonów oraz wartości logicznych. Do przekazywania różnych danych wykorzystaj konstrukcję ```parametrize```
 4. Przygotuj klasę *Kalkulator* posiadającą funkcje *dodawanie, mnożenie i potęgowanie*. Zaproponuj testy jednostkowe weryfikujące działanie kalkulatora.
