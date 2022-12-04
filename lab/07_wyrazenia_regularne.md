@@ -67,6 +67,6 @@ Znak ```r``` przed ' wyłącza zwykłe formatujące działanie \ przez co nie mu
 
 # Zadania
 1. Napisz regułę pozwalającą na dopasowanie adresu e-mail
-2. Napisz regułę pozwalającą na dopasowanie numeru telefonu
+2. Napisz regułę pozwalającą na dopasowanie numeru telefonu, pozwól na opcjonalne podanie nr kierunkowego kraju +48
 3. Sprawdź format numeru domu - poprawny to **numer\numer** (np. 50/2A, 100/3, 4/1), a błędny AB/2, ads/ew
-4. Napisz program, który będzie zwracał informację czy hasło jest silne czy słabe w zależności od wpisanego hasła poprzez *input()*
+4. Napisz program, który będzie zwracał informację czy hasło jest silne czy słabe w zależności od wpisanego hasła poprzez *input()*. Weryfikacja powinna mieć trzy poziomy - hasło słabe, mocne i bardzo mocne.
